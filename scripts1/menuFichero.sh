@@ -15,7 +15,7 @@ fi
 
 read -p "Elija una opcion: " opcion
 
-case Sopcion in
+case $opcion in
     1) cat "$fichero"
     ;;
     2) read -p "Introduce la nueva ubicación para mover el fichero: " ruta
