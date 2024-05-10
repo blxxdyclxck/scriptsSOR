@@ -19,6 +19,6 @@ case $opcion in
     4) echo "Saliendo del programa."
        exit 0
     ;;
-    *) echo "Opción inválida.
+    *) echo "Opción inválida."
     ;;
 esac
