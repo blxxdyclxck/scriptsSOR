@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+
+if [ $# -eq 2 ]; then 
+
+    DIV=$(echo "scale=2; $1 / $2" | bc -l)
+
+    echo "La división es igual a: $DIV"
+
+else
+
+    echo "Error: Por favor, proporciona dos parámetros."
+
+fi 

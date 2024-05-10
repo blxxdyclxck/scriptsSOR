@@ -1,0 +1,18 @@
+  GNU nano 6.2                                  multiplicar.sh                                           
+
+#!/bin/bash
+
+
+
+if [ $# -eq 2 ]; then 
+
+    MULTI=$(echo "$1 * $2" | bc)
+
+    echo "La multiplicacion es igual a: $MULTI"
+
+else
+
+    echo "Error: Por favor, proporciona dos parámetros."
+
+fi 
+

@@ -1,0 +1,80 @@
+#!/bin/bash
+
+
+
+echo "Menu: "
+
+echo "1. Suma"
+
+echo "2. Resta"
+
+echo "3. Multiplica"
+
+echo "4. Divide"
+
+echo "5. Salir"
+
+
+
+read -p "Elige una opción: " opcion
+
+
+
+case $opcion in
+
+    1)
+
+        read -p "Dame el primer número: " numero1
+
+        read -p "Dame el segundo número: " numero2
+
+        ./suma.sh $numero1 $numero2
+
+        ;;
+
+    2)
+
+        read -p "Dame el primer número: " numero1
+
+        read -p "Dame el segundo número: " numero2
+
+        ./resta.sh $numero1 $numero2
+
+        ;;
+
+    3)
+
+        read -p "Dame el primer número: " numero1
+
+        read -p "Dame el segundo número: " numero2
+
+        ./multiplicar.sh $numero1 $numero2
+
+        ;;
+
+    4)
+
+        read -p "Dame el primer número: " numero1
+
+        read -p "Dame el segundo número: " numero2
+
+        ./dividir.sh $numero1 $numero2
+
+        ;;
+
+    5)
+
+        echo "Saliendo"
+
+        exit 0
+
+        ;;
+
+    *)
+
+        echo "Opción no válida"
+
+        ;;
+
+esac
+

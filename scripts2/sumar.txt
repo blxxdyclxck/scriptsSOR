@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+
+if [ $# -eq 2 ]; then 
+
+    SUMA=$(echo "$1 + $2" | bc)
+
+    echo "La suma es igual a: $SUMA"
+
+else
+
+    echo "Error: Por favor, proporciona dos parámetros."
+
+fi 
+
